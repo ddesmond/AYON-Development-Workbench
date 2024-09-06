@@ -1,0 +1,14 @@
+ayon-applications
+ayon-blender
+ayon-core
+ayon-deadline
+ayon-houdini
+ayon-maya
+ayon-nuke
+ayon-ocio
+ayon-third-party
+ayon-traypublisher
+ayon-kitsu
+ayon-ftrack
+ayon-shotgrid
+example-studio-addon

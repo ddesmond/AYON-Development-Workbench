@@ -35,6 +35,7 @@
 
         // Initialize addon clones
         // These commands only work with Ynput official addons.
+        // WHY DO YOU CLONE TWO TIMES?
         {
             "label": "Initialize all addon clones",
             "type": "shell",
