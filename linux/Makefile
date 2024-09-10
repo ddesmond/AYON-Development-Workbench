@@ -140,6 +140,76 @@ compile-addon-%: ## Compile an addon, specify the addon name
 	@echo "Compile addon"
 	bash compile-addon.sh $$WRKB_AYON_ADDONS_PATH "$(subst compile-addon-,,$@)"
 
+
+### services
+service-list: ## List services
+	echo "List services"
+	echo "Shotgrid"
+	echo "kitsu"
+	echo "ftrack"
+
+# shotgrid
+service-install-shotgrid: ## Install a service, specify the service name
+	@echo "Install service Shotgrid"
+	@bash services/service-install-shotgrid.sh $$WRKB_AYON_PATH
+
+service-start-shotgrid: ## Start a service, needs bundle name
+	@echo "Start service Shotgrid"
+	@bash services/service-start-shotgrid.sh $$WRKB_AYON_PATH $$SET_AYON_BUNDLE
+
+service-start-leecher-shotgrid: ## Starts a leecher service, needs bundle name
+	@echo "Start Leecher service Shotgrid"
+	@bash services/service-start-leecher-shotgrid.sh $$WRKB_AYON_PATH $$SET_AYON_BUNDLE
+
+
+# ftrack
+service-install-ftrack: ## Install a service, specify the service name
+	@echo "Install service Ftrack"
+	@bash services/service-install-ftrack.sh $$WRKB_AYON_PATH
+
+service-start-ftrack: ## Starts a service, needs bundle name
+	@echo "Start service Ftrack"
+	@bash services/service-start-ftrack.sh $$WRKB_AYON_PATH $$SET_AYON_BUNDLE
+
+service-start-leecher-ftrack: ## Starts a leecher service, needs bundle name
+	@echo "Start Leecher service Ftrack"
+	@bash services/service-start-leecher-ftrack.sh $$WRKB_AYON_PATH $$SET_AYON_BUNDLE
+
+service-start-processor-ftrack: ## Starts a leecher service, needs bundle name
+	@echo "Start Leecher service Ftrack"
+	@bash services/service-start-processor-ftrack.sh $$WRKB_AYON_PATH $$SET_AYON_BUNDLE
+
+
+
+# kitsu
+service-install-kitsu: ## Install a service, specify the service name
+	@echo "Install service Kitsu"
+	@bash services/service-install-kitsu.sh $$WRKB_AYON_PATH
+
+service-start-processor-kitsu: ## Starts a leecher service, needs bundle name
+	@echo "Start Processor service Kitsu"
+	@bash services/service-start-processor-kitsu.sh $$WRKB_AYON_PATH $$SET_AYON_BUNDLE
+
+
+### docker
+
+ayon-docker: ## Launch ayon-docker
+	@echo "Launch ayon-docker"
+	@bash ayon-docker.sh $$WRKB_AYON_PATH
+
+ayon-docker-refresh: ## Refresh ayon-docker
+	@echo "Refresh ayon-docker"
+	@bash ayon-docker-refresh.sh $$WRKB_AYON_PATH
+
+ayon-docker-restart: ## Restart ayon-docker
+	@echo "Restart ayon-docker"
+	@bash ayon-docker-restart.sh $$WRKB_AYON_PATH
+
+ayon-docker-down: ## Down and remove ayon-docker
+	@echo "Remove ayon-docker"
+	@bash ayon-docker-remove.sh $$WRKB_AYON_PATH
+
+
 ### utils
 get-path: ## Get Workbench path
 	echo $$MAKE_PATH
