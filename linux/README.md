@@ -1,17 +1,28 @@
+
+                    ▄██▄
+         ▄███▄ ▀██▄ ▀██▀ ▄██▀ ▄██▀▀▀██▄    ▀███▄      █▄
+        ▄▄ ▀██▄  ▀██▄  ▄██▀ ██▀      ▀██▄  ▄  ▀██▄    ███
+       ▄██▀  ██▄   ▀ ▄▄ ▀  ██         ▄██  ███  ▀██▄  ███
+      ▄██▀    ▀██▄   ██    ▀██▄      ▄██▀  ███    ▀██ ▀█▀
+     ▄██▀      ▀██▄  ▀█      ▀██▄▄▄▄██▀    █▀      ▀██▄
+
+     ·  · - =[ by YNPUT ]:[ http://ayon.ynput.io ]= - ·  ·
+     ·  · Workbench tools - Linux Ayon toolset - des  ·  ·
+
+
 ## Hello dear linux user!
 
 This is a port of the Development Workbench for Ayon for Linux.
 
 ### IMPORTANT!
-This is for development purposes only, it is not meant to be used in production. If you do you should be aware that all data can be deleted with a simple make down command, and you will get a rested repo.
+This is for development purposes only, it is not meant to be used in production. If you do you should be aware that all data can be deleted with a simple make down command, and you will get a reseted and deleted repos.
 
-# Merge request and Colaboration
+### Merge request and Colaboration
 Please feel free to fork and make a merge request if you have any improvements or suggestions. I will be happy to merge them in.
 If you find something non-working or have any suggestions please open an issue and I will try to fix it as soon as possible.
 #### I am aware not all commands are implemented to the fullest, if you need those working either ping me or make a PR and I will merge it in.
 
-
-### Its very much an Alpha state and will be like this forever!
+### What is this?
 It will allow you to easily set up a development environment for Ayon on your linux machine.
 I have tried to port the setup as close as possible to the original setup for Windows with some slight modifications.
 The setup will clone all the necessary repos and set up the environment for you to start developing on Ayon.
@@ -40,7 +51,7 @@ Clone the repo and run make
 
 Available commands are:
 
-```bash
+```shell
 
 Running make will show you the help file like so:
 
@@ -54,7 +65,7 @@ compile-addons                 Compile addons
 create-upload-addon            Create and upload an addon to the Ayon server
 deps-create                    Create a bundle, specify the bundle name in the env
 deps-install                   ayon-dependencies tool - Install dependencies
-dontrun                        Don't run this if you have your machine setup already.
+dontrun                        Do not run this if you have your machine setup already.
 down                           Teardown the cloned setup, this will PERMA delete the cloned repos.
 get-path                       Get Workbench path
 help                           Display this help screen
