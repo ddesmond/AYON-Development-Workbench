@@ -3,14 +3,19 @@
 This is a port of the Development Workbench for Ayon for Linux.
 
 ### IMPORTANT!
-This is for development purposes only, it is not meant to be used in production. If you do you should be aware that all data can be deleted with a simple make down command and you will get a rested repo.
+This is for development purposes only, it is not meant to be used in production. If you do you should be aware that all data can be deleted with a simple make down command, and you will get a rested repo.
+
+# Merge request and Colaboration
+Please feel free to fork and make a merge request if you have any improvements or suggestions. I will be happy to merge them in.
+If you find something non-working or have any suggestions please open an issue and I will try to fix it as soon as possible.
+#### I am aware not all commands are implemented to the fullest, if you need those working either ping me or make a PR and I will merge it in.
 
 
 ### Its very much an Alpha state and will be like this forever!
-It will allow you to easily setup a development environment for Ayon on your linux machine.
+It will allow you to easily set up a development environment for Ayon on your linux machine.
 I have tried to port the setup as close as possible to the original setup for Windows with some slight modifications.
-The setup will clone all the necessary repos and setup the environment for you to start developing on Ayon.
-The setup will also clone all the addons and setup the environment for you to start developing on the addons.
+The setup will clone all the necessary repos and set up the environment for you to start developing on Ayon.
+The setup will also clone all the addons and set up the environment for you to start developing on the addons.
 
 Tested on Ubuntu 20.04.
 Repo assumes you have make and other tools installed on your machine.
@@ -32,6 +37,11 @@ Make sure you have docker installed on your machine before running the make comm
 Clone the repo and run make
 
 ### Help
+
+Available commands are:
+
+```bash
+
 Running make will show you the help file like so:
 
 Makefile for working with ayon codebase
@@ -75,3 +85,4 @@ update-addons                  Update all addons pull
 update-ayon-core-env           Update ayon core environment
 update-core                    Update core pull
 
+```
