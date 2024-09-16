@@ -12,7 +12,7 @@
 
 ## Hello dear linux user!
 
-This is a port of the Development Workbench for Ayon for Linux.
+This is a generic linux port of the Development Workbench for Ayon for Linux.
 
 ### IMPORTANT!
 This is for development purposes only, it is not meant to be used in production. If you do you should be aware that all data can be deleted with a simple make down command, and you will get a reseted and deleted repos.
@@ -48,6 +48,10 @@ Make sure you have docker installed on your machine before running the make comm
 Clone the repo and run make
 
 ### Help
+
+
+![cmd.png](cmd.png)
+
 
 Available commands are:
 
