@@ -9,6 +9,7 @@
      ·  · - =[ by YNPUT ]:[ http://ayon.ynput.io ]= - ·  ·
      ·  · Workbench tools - Linux Ayon toolset - des  ·  ·
 
+![cmd.gif](cmd.gif)
 
 ## Hello dear linux user!
 
@@ -47,11 +48,16 @@ Make sure you have docker installed on your machine before running the make comm
 
 Clone the repo and run make
 
+### Usage
+
+```shell
+make help
+```
+
+
 ### Help
 
-
 ![cmd.png](cmd.png)
-
 
 Available commands are:
 
