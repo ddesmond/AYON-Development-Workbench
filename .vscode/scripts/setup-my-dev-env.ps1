@@ -40,7 +40,7 @@ pyenv global 3.9.13
 pip install jupyter
 
 # Install ruff
-pip intall ruff
+pip install ruff
 
 # Install poetry
 pip install poetry

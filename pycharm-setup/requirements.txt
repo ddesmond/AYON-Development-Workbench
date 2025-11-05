@@ -1,0 +1,4 @@
+jupyter
+ruff
+poetry
+black
